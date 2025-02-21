@@ -1,0 +1,274 @@
+/* 🔹 Main Container */
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 🔹 Form Heading */
+.container h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* 🔹 Role Selection Container */
+.role-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* 🔹 Labels */
+.role-container label {
+  font-weight: bold;
+  color: #555;
+}
+
+/* 🔹 Dropdown Select Box */
+.role-container select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* 🔹 Dropdown Hover Effect */
+.role-container select:hover,
+.role-container select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 🔹 Input Fields */
+.container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+/* 🔹 Input Field Hover Effect */
+.container input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 🔹 Form Button */
+.container button {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+/* 🔹 Button Hover Effect */
+.container button:hover {
+  background: #0056b3;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 500px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+
+
+/* table */
+  .table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+    transition: 0.3s ease-in-out;
+  }
+  
+  td:last-child(0) {
+    color: #ff4d4d;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .upload{
+
+    
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    margin-top: 20px;
+  }
+  .upload ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Space between buttons */
+  }
+  
+  .upload li {
+    display: inline-block;
+  }
+  
+  .upload button {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .upload button:hover {
+    background-color: #45a049;
+  }
+  
+  .upload button:active {
+    transform: scale(0.95);
+  }
+
+/* edit form */
+.edit-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  z-index: 1000;
+}
+
+.edit-form h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.edit-form label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.edit-form p {
+  color: red;
+  font-size: 12px;
+  margin-top: -5px;
+}
+
+.edit-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.edit-form button:first-of-type {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-form button:first-of-type:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.edit-form button:last-of-type {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.edit-form button:hover {
+  opacity: 0.9;
+}
+/* mouse hover panna word vara vendum */
+.delete-btn {
+  position: relative;
+}
+.edit-icon {
+  position: relative;
+}
+.tooltip {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: -25px; /* Position above the button */
+  left: 40%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.delete-btn:hover .tooltip {
+  visibility: visible;
+}
+.edit-icon:hover + .tooltip {
+  visibility: visible;
+}
